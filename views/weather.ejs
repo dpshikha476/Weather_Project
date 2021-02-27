@@ -10,16 +10,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
+
+<style>
+.cont
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0e98e;
+    vertical-align: middle;
+}
+.jumb
+{
+    position: relative;
+	display: flex;
+	justify-content: center;
+    text-align: center;
+    
+}
+
+@media (max-width: 1300px)
+{
+    .fo
+  {
+      font-size: 35px;
+  }
+  .go
+  {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 750px)
+{
+    .fo
+  {
+      font-size: 27px;
+  }
+  .go
+  {
+    font-size: 20px;
+  }
+  .fir{
+    margin-top: 30%;  
+  }
+}
+@media (max-width: 400px)
+{
+  .fo
+  {
+      font-size: 22px;
+  }
+  .go
+  {
+    font-size: 16px;
+  }
+  .fir{
+    margin-top: 40%;  
+  }
+}
+</style>
+
 <body>
   
-    <div class="jumbotron" style="background-color: #f0e98e;">
-        
-        <h1 class="display-4 text-center font-weight-bold h1" style=" margin-bottom: 3rem;" >The Temperature in <%= cityName %> is <%= temp %> degree Celcius.</h1>
-        
-        <h3 class="text-center" style=" margin-bottom: 2rem;" >The weather is currently <%= description %></h3>
-        
-        <img  class="rounded mx-auto d-block"  src="<%= imageURL %>" >
-       
+    <div class="cont">
+        <div class="jumb">
+            <h2 class="display-4 text-center font-weight-bold fo fir" style=" margin-bottom: 3rem; margin-top: 15%;" >The Temperature in <%= cityName %> is <%= temp %> degree Celcius.</h2>   
+        </div>
+        <div class="jumb">
+            <h3 class="text-center go" style=" margin-bottom: 2rem;" >The weather is currently <%= description %></h3>
+        </div>
+        <div class="jumb">
+            <img  class="rounded mx-auto d-block"  src="<%= imageURL %>" >
+        </div>
+          
     </div>
 
 </body>
